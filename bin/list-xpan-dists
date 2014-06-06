@@ -14,3 +14,34 @@ Perinci::CmdLine->new(url => "/XPAN/Query/list_xpan_dists")->run;
 1;
 #ABSTRACT: List {CPAN,MiniCPAN,DarkPAN} distributions
 #PODNAME: list-xpan-dists
+
+=head1 SYNOPSIS
+
+List all distributions:
+
+ % list-xpan-dists /cpan
+
+Grep by distribution name, return detailed record:
+
+ % list-xpan-dists /cpan task-belike-sharyanto --detail
+ .-----------------------------------------------------------------------------------------------------------------.
+ | author      file                                                name                                    version |
+ |                                                                                                                 |
+ | SHARYANTO   Task-BeLike-SHARYANTO-Favorited-0.05.tar.gz         Task-BeLike-SHARYANTO-Favorited            0.05 |
+ | SHARYANTO   Task-BeLike-SHARYANTO-Devel-0.06.tar.gz             Task-BeLike-SHARYANTO-Devel                0.06 |
+ | SHARYANTO   Task-BeLike-SHARYANTO-Spec-0.03.tar.gz              Task-BeLike-SHARYANTO-Spec                 0.03 |
+ | SHARYANTO   Task-BeLike-SHARYANTO-Patches-0.06.tar.gz           Task-BeLike-SHARYANTO-Patches              0.06 |
+ | SHARYANTO   Task-BeLike-SHARYANTO-Apps-0.12.tar.gz              Task-BeLike-SHARYANTO-Apps                 0.12 |
+ | SHARYANTO   Task-BeLike-SHARYANTO-Authored-0.20.tar.gz          Task-BeLike-SHARYANTO-Authored             0.20 |
+ | SHARYANTO   Task-BeLike-SHARYANTO-Noted-0.03.tar.gz             Task-BeLike-SHARYANTO-Noted                0.03 |
+ | SHARYANTO   Task-BeLike-SHARYANTO-AutomatedUpdate-0.01.tar.gz   Task-BeLike-SHARYANTO-AutomatedUpdate      0.01 |
+ `-----------------------------------------------------------------------------------------------------------------'
+
+Filter by author, return JSON:
+
+ % list-xpan-dists /cpan --author sharyanto --json
+
+Show all available options:
+
+ % list-xpan-dists --help
+

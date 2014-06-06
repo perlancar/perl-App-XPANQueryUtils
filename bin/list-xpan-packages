@@ -14,3 +14,32 @@ Perinci::CmdLine->new(url => "/XPAN/Query/list_xpan_packages")->run;
 1;
 #ABSTRACT: List {CPAN,MiniCPAN,DarkPAN} packages
 #PODNAME: list-xpan-packages
+
+=head1 SYNOPSIS
+
+List all packages:
+
+ % list-xpan-packages /cpan
+
+Search by author and dist, show detailed records:
+
+ % list-xpan-packages /cpan --author neilb --dist Graph-Reader --detail
+ .-------------------------------------------------------------------------------------------.
+ | author   dist              file                          name                     version |
+ |                                                                                           |
+ | NEILB    Graph-ReadWrite   Graph-ReadWrite-2.06.tar.gz   Graph::Writer::daVinci      2.06 |
+ | NEILB    Graph-ReadWrite   Graph-ReadWrite-2.06.tar.gz   Graph::Reader::HTK          2.06 |
+ | NEILB    Graph-ReadWrite   Graph-ReadWrite-2.06.tar.gz   Graph::Reader::XML          2.06 |
+ | NEILB    Graph-ReadWrite   Graph-ReadWrite-2.06.tar.gz   Graph::Writer::VCG          2.06 |
+ | NEILB    Graph-ReadWrite   Graph-ReadWrite-2.06.tar.gz   Graph::Writer::Dot          2.06 |
+ | NEILB    Graph-ReadWrite   Graph-ReadWrite-2.06.tar.gz   Graph::Reader::Dot          2.06 |
+ | NEILB    Graph-ReadWrite   Graph-ReadWrite-2.06.tar.gz   Graph::Reader               2.06 |
+ | NEILB    Graph-ReadWrite   Graph-ReadWrite-2.06.tar.gz   Graph::Writer::HTK          2.06 |
+ | NEILB    Graph-ReadWrite   Graph-ReadWrite-2.06.tar.gz   Graph::Writer               2.06 |
+ | NEILB    Graph-ReadWrite   Graph-ReadWrite-2.06.tar.gz   Graph::Writer::XML          2.06 |
+ `-------------------------------------------------------------------------------------------'
+
+Show all available options:
+
+ % list-xpan-packages --help
+

@@ -14,3 +14,20 @@ Perinci::CmdLine->new(url => "/XPAN/Query/list_xpan_authors")->run;
 1;
 #ABSTRACT: List {CPAN,MiniCPAN,DarkPAN} authors
 #PODNAME: list-xpan-authors
+
+=head1 SYNOPSIS
+
+List all authors:
+
+ % list-xpan-authors /cpan
+
+Grep by CPAN ID:
+
+ % list-xpan-authors /cpan michael
+ MICHAEL
+ MICHAELW
+
+Show all available options:
+
+ % list-xpan-authors --help
+
