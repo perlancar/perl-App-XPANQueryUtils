@@ -45,3 +45,8 @@ Show all available options:
 
  % list-xpan-dists --help
 
+
+=head1 SEE ALSO
+
+L<XPAN::Query>
+

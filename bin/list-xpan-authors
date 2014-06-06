@@ -31,3 +31,8 @@ Show all available options:
 
  % list-xpan-authors --help
 
+
+=head1 SEE ALSO
+
+L<XPAN::Query>
+

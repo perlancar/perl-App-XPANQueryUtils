@@ -14,3 +14,9 @@ Perinci::CmdLine->new(url => "/XPAN/Query/list_xpan_modules")->run;
 1;
 #ABSTRACT: List {CPAN,MiniCPAN,DarkPAN} modules
 #PODNAME: list-xpan-modules
+
+
+=head1 SEE ALSO
+
+L<XPAN::Query>
+

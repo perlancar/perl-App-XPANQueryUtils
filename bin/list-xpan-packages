@@ -43,3 +43,8 @@ Show all available options:
 
  % list-xpan-packages --help
 
+
+=head1 SEE ALSO
+
+L<XPAN::Query>
+
