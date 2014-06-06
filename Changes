@@ -1,6 +1,6 @@
 Revision history for App-XPANQueryUtils
 
-0.01    2014-06-06 (SHARYANTO) (not yet)
+0.01    2014-06-06 (SHARYANTO)
 
         - First release. Separated from XPAN-Query distribution to make
           its dependencies light.
