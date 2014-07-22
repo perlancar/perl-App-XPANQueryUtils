@@ -4,12 +4,12 @@ use 5.010;
 use strict;
 use warnings;
 
-use Perinci::CmdLine 1.04;
+use Perinci::CmdLine::Any;
 
 # DATE
 # VERSION
 
-Perinci::CmdLine->new(url => "/XPAN/Query/list_xpan_packages")->run;
+Perinci::CmdLine::Any->new(url => "/XPAN/Query/list_xpan_packages")->run;
 
 1;
 #ABSTRACT: List {CPAN,MiniCPAN,DarkPAN} packages
