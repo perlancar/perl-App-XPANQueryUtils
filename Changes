@@ -1,5 +1,15 @@
 Revision history for App-XPANQueryUtils
 
+0.04     2014-11-09 (PERLANCAR)
+
+         - No functional changes.
+
+         - CLI scripts are now generated automatically using
+           DZP::Rinci::ScriptFromFunc.
+
+         - Prefer Perinci::CmdLine::Lite for faster startup.
+
+
 0.03     2014-07-22 (SHARYANTO)
 
          - No functional changes.
