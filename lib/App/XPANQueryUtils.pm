@@ -14,9 +14,7 @@ use warnings;
 
 This distribution provides the following command-line utilities:
 
- list-xpan-authors
- list-xpan-packages
- list-xpan-dists
+# INSERT_EXECS_LIST
 
 
 =head1 SEE ALSO
